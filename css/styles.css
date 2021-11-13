@@ -1,182 +1,187 @@
 @font-face {
-  font-family: "Neue Haas Grotesk Display Pro";
+  font-family: "Arial";
+  src: url("../fonts/Arial/ArialRegular.eot");
+  src: url("../fonts/Arial/ArialRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Arial/ArialRegular.woff") format("woff"), url("../fonts/Arial/ArialRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/Arial/ArialBold.eot");
+  src: url("../fonts/Arial/ArialBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Arial/ArialBold.woff") format("woff"), url("../fonts/Arial/ArialBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "NeueHaasGroteskDisplayPro";
   src: url("../fonts/NeueHaasDisplay/NeueHaasDisplay-Mediu.eot");
-  src: local("../fonts/NeueHaasDisplay/NeueHaasDisplay-Mediu");
-  src-url: "../fonts/NeueHaasDisplay/NeueHaasDisplay-Mediu.eot?#iefix" format("embedded-opentype");
-  src-url: "../fonts/NeueHaasDisplay/NeueHaasDisplay-Mediu.woff2" format("woff2");
-  src-url: "../fonts/NeueHaasDisplay/NeueHaasDisplay-Mediu.woff" format("woff");
-  src-url: "../fonts/NeueHaasDisplay/NeueHaasDisplay-Mediu.ttf" format("truetype");
+  src: local("NeueHaasDisplay-Mediu"), url("../fonts/NeueHaasDisplay/NeueHaasDisplay-Mediu.eot?#iefix") format("embedded-opentype"), url("../fonts/NeueHaasDisplay/NeueHaasDisplay-Mediu.woff2") format("woff2"), url("../fonts/NeueHaasDisplay/NeueHaasDisplay-Mediu.woff") format("woff"), url("../fonts/NeueHaasDisplay/NeueHaasDisplay-Mediu.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "Neue Haas Grotesk Display Pro";
-  src: url("/fonts/NeueHaasDisplay/NeueHaasDisplay-RomanItalic.eot");
-  src: local("/fonts/NeueHaasDisplay/NeueHaasDisplay-RomanItalic");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-RomanItalic.eot?#iefix" format("embedded-opentype");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-RomanItalic.woff2" format("woff2");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-RomanItalic.woff" format("woff");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-RomanItalic.ttf" format("truetype");
+  font-family: "NeueHaasGroteskDisplayPro";
+  src: url("../fonts/NeueHaasDisplay/NeueHaasDisplay-RomanItalic.eot");
+  src: local("NeueHaasDisplay-RomanItalic"), url("../fonts/NeueHaasDisplay/NeueHaasDisplay-RomanItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/NeueHaasDisplay/NeueHaasDisplay-RomanItalic.woff2") format("woff2"), url("../fonts/NeueHaasDisplay/NeueHaasDisplay-RomanItalic.woff") format("woff"), url("../fonts/NeueHaasDisplay/NeueHaasDisplay-RomanItalic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
 }
 @font-face {
-  font-family: "Neue Haas Grotesk Display Pro";
-  src: url("/fonts/NeueHaasDisplay/NeueHaasDisplay-Black.eot");
-  src: local("/fonts/NeueHaasDisplay/NeueHaasDisplay-Black");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-Black.eot?#iefix" format("embedded-opentype");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-Black.woff2" format("woff2");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-Black.woff" format("woff");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-Black.ttf" format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Neue Haas Grotesk Display Pro";
-  src: url("/fonts/NeueHaasDisplay/NeueHaasDisplay-MediumItalic.eot");
-  src: local("/fonts/NeueHaasDisplay/NeueHaasDisplay-MediumItalic");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-MediumItalic.eot?#iefix" format("embedded-opentype");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-MediumItalic.woff2" format("woff2");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-MediumItalic.woff" format("woff");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-MediumItalic.ttf" format("truetype");
-  font-weight: 500;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Neue Haas Grotesk Display Pro";
-  src: url("/fonts/NeueHaasDisplay/NeueHaasDisplay-BlackItalic.eot");
-  src: local("/fonts/NeueHaasDisplay/NeueHaasDisplay-BlackItalic");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-BlackItalic.eot?#iefix" format("embedded-opentype");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-BlackItalic.woff2" format("woff2");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-BlackItalic.woff" format("woff");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-BlackItalic.ttf" format("truetype");
-  font-weight: 900;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Neue Haas Grotesk Display Pro";
-  src: url("/fonts/NeueHaasDisplay/NeueHaasDisplay-Roman.eot");
-  src: local("/fonts/NeueHaasDisplay/NeueHaasDisplay-Roman");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-Roman.eot?#iefix" format("embedded-opentype");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-Roman.woff2" format("woff2");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-Roman.woff" format("woff");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-Roman.ttf" format("truetype");
+  font-family: "NeueHaasGroteskDisplayPro";
+  src: url("../fonts/NeueHaasDisplay/NeueHaasDisplay-Roman.eot");
+  src: local("../fonts/NeueHaasDisplay/NeueHaasDisplay-Roman"), url("../fonts/NeueHaasDisplay/NeueHaasDisplay-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/NeueHaasDisplay/NeueHaasDisplay-Roman.woff2") format("woff2"), url("../fonts/NeueHaasDisplay/NeueHaasDisplay-Roman.woff") format("woff"), url("../fonts/NeueHaasDisplay/NeueHaasDisplay-Roman.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: "Neue Haas Grotesk Display Pro";
-  src: url("/fonts/NeueHaasDisplay/NeueHaasDisplay-BoldItalic.eot");
-  src: local("/fonts/NeueHaasDisplay/NeueHaasDisplay-BoldItalic");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-BoldItalic.eot?#iefix" format("embedded-opentype");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-BoldItalic.woff2" format("woff2");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-BoldItalic.woff" format("woff");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-BoldItalic.ttf" format("truetype");
-  font-weight: bold;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Neue Haas Grotesk Display Pro";
-  src: url("/fonts/NeueHaasDisplay/NeueHaasDisplay-LightItalic.eot");
-  src: local("/fonts/NeueHaasDisplay/NeueHaasDisplay-LightItalic");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-LightItalic.eot?#iefix" format("embedded-opentype");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-LightItalic.woff2" format("woff2");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-LightItalic.woff" format("woff");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-LightItalic.ttf" format("truetype");
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Neue Haas Grotesk Display Pro";
-  src: url("/fonts/NeueHaasDisplay/NeueHaasDisplay-Bold.eot");
-  src: local("/fonts/NeueHaasDisplay/NeueHaasDisplay-Bold");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-Bold.eot?#iefix" format("embedded-opentype");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-Bold.woff2" format("woff2");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-Bold.woff" format("woff");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-Bold.ttf" format("truetype");
+  font-family: "NeueHaasGroteskDisplayPro";
+  src: url("../fonts/NeueHaasDisplay/NeueHaasDisplay-Bold.eot");
+  src: local("../fonts/NeueHaasDisplay/NeueHaasDisplay-Bold"), url("../fonts/NeueHaasDisplay/NeueHaasDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/NeueHaasDisplay/NeueHaasDisplay-Bold.woff2") format("woff2"), url("../fonts/NeueHaasDisplay/NeueHaasDisplay-Bold.woff") format("woff"), url("../fonts/NeueHaasDisplay/NeueHaasDisplay-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: "Neue Haas Grotesk Display Pro";
-  src: url("/fonts/NeueHaasDisplay/NeueHaasDisplay-Light.eot");
-  src: local("/fonts/NeueHaasDisplay/NeueHaasDisplay-Light");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-Light.eot?#iefix" format("embedded-opentype");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-Light.woff2" format("woff2");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-Light.woff" format("woff");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-Light.ttf" format("truetype");
+  font-family: "NeueHaasGroteskDisplayPro";
+  src: url("../fonts/NeueHaasDisplay/NeueHaasDisplay-Light.eot");
+  src: local("../fonts/NeueHaasDisplay/NeueHaasDisplay-Light"), url("../fonts/NeueHaasDisplay/NeueHaasDisplay-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/NeueHaasDisplay/NeueHaasDisplay-Light.woff2") format("woff2"), url("../fonts/NeueHaasDisplay/NeueHaasDisplay-Light.woff") format("woff"), url("../fonts/NeueHaasDisplay/NeueHaasDisplay-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: "Neue Haas Grotesk Display Pro";
-  src: url("/fonts/NeueHaasDisplay/NeueHaasDisplay-XXThin.eot");
-  src: local("/fonts/NeueHaasDisplay/NeueHaasDisplay-XXThin");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-XXThin.eot?#iefix" format("embedded-opentype");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-XXThin.woff2" format("woff2");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-XXThin.woff" format("woff");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-XXThin.ttf" format("truetype");
-  font-weight: 100;
+  font-family: "Bigilla";
+  src: url("../fonts/Bigilla/Bigilla.otf");
+  src: local("../fonts/Bigilla/Bigilla.otf"), url("../fonts/Bigilla/Bigilla.otf") format("woff"), url("../fonts/Bigilla/Bigilla.otf") format("opentype"), url("../fonts/Bigilla/Bigilla.otf") format("truetype");
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: "Neue Haas Grotesk Display Pro";
-  src: url("/fonts/NeueHaasDisplay/NeueHaasDisplay-XThinItalic.eot");
-  src: local("/fonts/NeueHaasDisplay/NeueHaasDisplay-XThinItalic");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-XThinItalic.eot?#iefix" format("embedded-opentype");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-XThinItalic.woff2" format("woff2");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-XThinItalic.woff" format("woff");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-XThinItalic.ttf" format("truetype");
-  font-weight: 100;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Neue Haas Grotesk Display Pro";
-  src: url("/fonts/NeueHaasDisplay/NeueHaasDisplay-XXThinItalic.eot");
-  src: local("/fonts/NeueHaasDisplay/NeueHaasDisplay-XXThinItalic");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-XXThinItalic.eot?#iefix" format("embedded-opentype");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-XXThinItalic.woff2" format("woff2");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-XXThinItalic.woff" format("woff");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-XXThinItalic.ttf" format("truetype");
-  font-weight: 100;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Neue Haas Grotesk Display Pro";
-  src: url("/fonts/NeueHaasDisplay/NeueHaasDisplay-XThin.eot");
-  src: local("/fonts/NeueHaasDisplay/NeueHaasDisplay-XThin");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-XThin.eot?#iefix" format("embedded-opentype");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-XThin.woff2" format("woff2");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-XThin.woff" format("woff");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-XThin.ttf" format("truetype");
-  font-weight: 100;
+  font-family: "ClashDisplay";
+  src: url("../fonts/ClashDisplay/ClashDisplay-Medium.eot");
+  src: local("../fonts/ClashDisplay/ClashDisplay-Medium"), url("../fonts/ClashDisplay/ClashDisplay-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/ClashDisplay/ClashDisplay-Medium.woff2") format("woff2"), url("../fonts/ClashDisplay/ClashDisplay-Medium.woff") format("woff"), url("../fonts/ClashDisplay/ClashDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: "Neue Haas Grotesk Display Pro";
-  src: url("/fonts/NeueHaasDisplay/NeueHaasDisplay-Thin.eot");
-  src: local("/fonts/NeueHaasDisplay/NeueHaasDisplay-Thin");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-Thin.eot?#iefix" format("embedded-opentype");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-Thin.woff2" format("woff2");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-Thin.woff" format("woff");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-Thin.ttf" format("truetype");
-  font-weight: 100;
+  font-family: "ClashDisplay";
+  src: url("../fonts/ClashDisplay/ClashDisplay-Semibold.eot");
+  src: local("../fonts/ClashDisplay/ClashDisplay-Semibold"), url("../fonts/ClashDisplay/ClashDisplay-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ClashDisplay/ClashDisplay-Semibold.woff2") format("woff2"), url("../fonts/ClashDisplay/ClashDisplay-Semibold.woff") format("woff"), url("../fonts/ClashDisplay/ClashDisplay-Semibold.ttf") format("truetype");
+  font-weight: 600;
   font-style: normal;
 }
 @font-face {
-  font-family: "Neue Haas Grotesk Display Pro";
-  src: url("/fonts/NeueHaasDisplay/NeueHaasDisplay-ThinItalic.eot");
-  src: local("/fonts/NeueHaasDisplay/NeueHaasDisplay-ThinItalic");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-ThinItalic.eot?#iefix" format("embedded-opentype");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-ThinItalic.woff2" format("woff2");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-ThinItalic.woff" format("woff");
-  src-url: "/fonts/NeueHaasDisplay/NeueHaasDisplay-ThinItalic.ttf" format("truetype");
-  font-weight: 100;
+  font-family: "ClashDisplay";
+  src: url("../fonts/ClashDisplay/ClashDisplay-Bold.eot");
+  src: local("../fonts/ClashDisplay/ClashDisplay-Bold"), url("../fonts/ClashDisplay/ClashDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ClashDisplay/ClashDisplay-Bold.woff2") format("woff2"), url("../fonts/ClashDisplay/ClashDisplay-Bold.woff") format("woff"), url("../fonts/ClashDisplay/ClashDisplay-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("../fonts/ClashDisplay/ClashDisplay-Regular.eot");
+  src: local("../fonts/ClashDisplay/ClashDisplay-Regular"), url("../fonts/ClashDisplay/ClashDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ClashDisplay/ClashDisplay-Regular.woff2") format("woff2"), url("../fonts/ClashDisplay/ClashDisplay-Regular.woff") format("woff"), url("../fonts/ClashDisplay/ClashDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Playfair";
+  src: url("../fonts/Playfair/PlayfairDisplay-SemiBoldItalic.ttf");
+  src: local("../fonts/Playfair/PlayfairDisplay-SemiBoldItalic"), url("../fonts/Playfair/PlayfairDisplay-SemiBoldItalic.ttf") format("embedded-opentype"), url("../fonts/Playfair/PlayfairDisplay-SemiBoldItalic.ttf") format("woff2"), url("../fonts/Playfair/PlayfairDisplay-SemiBoldItalic.ttf") format("woff"), url("../fonts/Playfair/PlayfairDisplay-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
   font-style: italic;
+}
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: "NeueHaasGroteskDisplayPro";
+  overflow-x: hidden;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+h1 {
+  font-size: 192px;
+}
+
+h2 {
+  font-size: 84px;
+  font-weight: 500;
+}
+
+.text-primary {
+  font-size: 44px;
+  font-weight: 500;
+}
+
+.text {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.text-light-nhgdp {
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.text-bold-arial {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.text-medium-cd {
+  font-size: 44px;
+  font-weight: 500;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 .text {
-  font-size: 20px;
-  font-family: "Neue Haas Grotesk Display Pro";
-  font-weight: normal;
-  font-style: normal;
+  font-size: 192px;
+  font-family: "Playfair";
+  font-weight: 600;
+  font-style: italic;
 }
