@@ -39,7 +39,7 @@
     font-family: 'NeueHaasGroteskDisplayPro'
     src: url('../fonts/NeueHaasDisplay/NeueHaasDisplay-Bold.eot')
     src: local('../fonts/NeueHaasDisplay/NeueHaasDisplay-Bold'), url('../fonts/NeueHaasDisplay/NeueHaasDisplay-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/NeueHaasDisplay/NeueHaasDisplay-Bold.woff2') format('woff2'), url('../fonts/NeueHaasDisplay/NeueHaasDisplay-Bold.woff') format('woff'), url('../fonts/NeueHaasDisplay/NeueHaasDisplay-Bold.ttf') format('truetype')
-    font-weight: bold
+    font-weight: 600
     font-style: normal
 
 @font-face 
@@ -89,9 +89,9 @@
 //Подключение шрифта Playfair
 @font-face 
     font-family: 'Playfair'
-    src: url('../fonts/Playfair/PlayfairDisplay-SemiBoldItalic.ttf')
-    src: local('../fonts/Playfair/PlayfairDisplay-SemiBoldItalic'), url('../fonts/Playfair/PlayfairDisplay-SemiBoldItalic.ttf') format('embedded-opentype'), url('../fonts/Playfair/PlayfairDisplay-SemiBoldItalic.ttf') format('woff2'), url('../fonts/Playfair/PlayfairDisplay-SemiBoldItalic.ttf') format('woff'), url('../fonts/Playfair/PlayfairDisplay-SemiBoldItalic.ttf') format('truetype')
-    font-weight: 600
+    src: url('../fonts/Playfair/PlayfairDisplay-Italic.ttf')
+    src: local('../fonts/Playfair/PlayfairDisplay-Italic'), url('../fonts/Playfair/PlayfairDisplay-Italic.ttf') format('embedded-opentype'), url('../fonts/Playfair/PlayfairDisplay-Italic.ttf') format('woff2'), url('../fonts/Playfair/PlayfairDisplay-Italic.ttf') format('woff'), url('../fonts/Playfair/PlayfairDisplay-Italic.ttf') format('truetype')
+    font-weight: 400
     font-style: italic
 
 //Обнуление дефолтных стилей браузеров
@@ -106,6 +106,7 @@
 // Выставляем основные настройки по-умолчанию для body
 body
     min-height: 100vh
+    background-color: $bg-color
     scroll-behavior: smooth
     text-rendering: optimizeSpeed
     font-family: 'NeueHaasGroteskDisplayPro'

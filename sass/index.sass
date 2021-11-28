@@ -1,5 +1,522 @@
-.text
-    font-size: 192px
-    font-family: 'Playfair'
-    font-weight: 600
-    font-style: italic
+.container
+    width: 100%
+    max-width: 1550px //1500px
+    margin: 0 auto
+    position: relative
+
+//Section header
+.header
+    position: relative
+
+    &__content
+        display: flex
+        justify-content: flex-start
+        flex-wrap: wrap
+        align-items: center
+        width: 100%
+        height: 100%
+
+    &__title
+        width: 100%
+        max-width: 760px
+        height: 100%
+        max-height: 350px
+        display: flex
+        flex-direction: column
+        color: $h1-color
+        margin-right: 52px
+
+        &_NHDP-font
+            font-weight: $h1-weight
+            font-style: normal
+
+        &_PF-font
+            margin-top: -80px
+            margin-left: 155px
+            font-family: 'Playfair'
+            font-weight: $h1-weight-italic
+            font-style: italic
+
+.circle-title
+    max-width: 709px
+    width: 100%
+    max-height: 709px
+    height: 100%
+    padding: 199.5px 31.5px 132.5px 31.5px
+    border: 7px solid $circle-color
+    border-radius: 50%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    color: $h2-color-light
+
+    &__text
+        max-width: 632px
+        width: 100%
+        max-height: 310px
+        height: 100%
+        font-size: $h2-size
+        font-weight: 500
+        font-style: normal
+
+        &_gray
+            color: $h2-color-dark-gray
+
+        &_italic
+            font-style: italic
+
+    &__subtext
+        max-width: 154px
+        width: 100%
+        max-height: 36px
+        height: 100%
+        margin-top: 38px
+        font-size: $subtext-size
+        font-weight: normal
+        font-style: normal
+        letter-spacing: 7px
+
+.gradient
+
+    img
+        left: auto
+        right: auto
+        filter: blur(5px)
+        position: absolute     
+        width: 100%
+
+.logo
+    position: relative
+    display: flex
+    justify-content: space-between
+    padding-top: 52px
+    padding-left: 65px
+    padding-right: 76px
+
+    &__link
+        max-width: 82px
+        max-height: 134px
+
+        object
+            pointer-events: none
+            width: 100%
+            height: 100%
+
+    &__label
+        width: 100%
+        max-width: 218px
+        height: 100%
+        max-height: 18px
+        color: $text-color-light
+        font-weight: 600
+        font-style: normal
+        font-size: $label-size
+        letter-spacing: 4px
+        text-align: right
+
+        span
+            padding-right: 6px
+
+//Section about-author
+.about-author
+
+    &__content
+        position: relative
+        display: flex
+        flex-direction: column
+        margin-bottom: 204px
+
+    &__sign
+        max-width: 876px
+        width: 100%
+        font-size: $text-size
+        font-weight: 500
+        font-style: normal
+        color: $text-color-light
+        line-height: 1.5
+        margin-bottom: 152px
+
+.line
+    position: absolute
+    height: 100%
+    width: 100%
+    background-color: $line-color
+
+    &__1st
+        left: 883px
+        top: 82px
+        max-width: 154px
+        max-height: 1px
+
+    &__2nd
+        left: 1037px
+        top: 82px
+        max-height: 1391px
+        max-width: 1px
+
+    &__3rd
+        left: 522px
+        top: 1472px    
+        max-width: 515px
+        max-height: 1px
+
+    &__4th
+        max-width: 1px
+        max-height: 118px
+        left: 522px
+        top: 1472px
+
+    &__5th
+        max-width: 192px
+        max-height: 1px
+        left: 396px
+        top: 1590px
+
+    &__6th
+        max-width: 1px
+        max-height: 151px
+        left: 396px
+        top: 1590px
+
+    &__7th
+        max-width: 465px
+        max-height: 1px
+        left: 0
+        top: 1741px
+
+    &__8th
+        max-width: 1px
+        max-height: 305px
+        top: 1741px
+        left: 0
+
+    &__9th
+        max-width: 486px
+        max-height: 1px
+        top: 40px
+        left: 0
+
+.info
+    display: flex
+    justify-content: flex-start
+    flex-wrap: wrap
+    margin-bottom: 304px
+
+.card
+    position: relative
+    max-width: 491px
+    width: 100%
+    max-height: 981px
+    height: 100%
+    border: 1px solid $line-color
+    margin-right: 37px
+
+    &:last-child
+        margin-right: 0
+
+.portfolio
+    display: flex
+    flex-direction: column
+    border-radius: 67px 0 0 0
+    color: $text-color-light
+
+    &__img
+        position: relative
+        max-height: 716px
+        filter: hue-rotate(320deg) blur(1px)
+
+        img
+            border-radius: 67px 0 0 0
+            width: 100%
+            height: 100%
+
+        span
+            position: absolute
+            width: 100%
+            max-height: 1px
+            height: 100%
+            background-color: $line-color
+            left: 0
+            bottom: 0
+
+    &__description
+        margin-top: 10px
+        margin-left: 17px
+        margin-bottom: 28px
+        position: relative
+        max-height: 212px//182.5px
+        height: 100%
+        max-width: 474px
+        width: 100%
+        overflow: hidden
+        word-break: break-all
+
+    &__title
+        font-size: $pf-title-size
+        font-family: 'Bigilla'
+        font-weight: $pf-title-weight
+        font-style: normal
+        line-height: 1
+    
+    &__subtext
+        position: absolute
+        right: 33px
+        bottom: 5px
+        display: flex
+        flex-direction: column
+        font-weight: $text-light-weight-nhgdp
+        font-size: $text-light-size-nhgdp
+        font-style: normal
+        letter-spacing: 7px
+        line-height: 2
+
+    &__sign-block
+        position: relative
+        display: flex        
+        align-items: center
+        border-top: 1px solid $line-color
+
+    &__sign
+        margin-top: 15px
+        margin-left: 20px
+        margin-bottom: 15px
+        font-family: 'Arial'
+        font-size: $subtext-size
+        font-style: normal
+        font-weight: 700
+        letter-spacing: 4px
+        margin-right: 132px
+
+.circle
+    max-width: 16.5px
+    width: 100%
+    min-height: 16.5px
+    height: 100%
+    border-radius: 50%
+    margin-right: 18.5px
+
+    &:last-child
+        margin-right: 0
+
+    &_white
+        background-color: $circle-color-light
+
+    &_black
+        border: 1px solid $circle-color-light
+        
+.contacts
+    display: flex
+    flex-direction: column
+    border-radius: 0 0 50px 0
+    color: $text-color-light
+
+    &__block
+        position: relative
+        display: flex
+        flex-direction: column
+        overflow: hidden
+        word-break: break-all
+        padding-top: 25px
+        padding-left: 25px
+        border-bottom: 1px solid $line-color
+        
+    &__title
+        font-family: 'Bigilla'
+        font-size: $contacts-title-size
+        font-weight: $contacts-title-weight
+        font-style: normal
+        line-height: 94%
+        width: 100%
+        min-width: 449px
+        margin-bottom: 40px
+
+    &__img
+        max-width: 235px
+        max-height: 270px
+        margin-bottom: 60px
+
+
+        img
+            width: 100%
+            height: 100%
+
+    &__links
+        display: flex
+        flex-direction: column
+        justify-content: center
+        margin-top: 24px
+        margin-left: 25px
+        margin-right: 25px
+        margin-bottom: 24px
+        font-weight: $link-weight-bold
+        font-style: normal
+        font-size: $text-primary-size
+
+    &__link
+        max-width: 460px
+        width: 100%
+        max-height: 65.3px
+        height: 100%
+        display: flex
+        border: 1px solid $line-color
+        border-radius: 0 50px 50px 0
+        margin-bottom: 11.3px 
+        letter-spacing: 10px
+        line-height: 100%
+        padding-top: 15px
+        padding-left: 45px
+
+        &:last-child
+            margin-bottom: 0
+
+        &_a
+            padding-top: 18.5px       
+            padding-bottom: 18.5px
+            text-decoration: none
+            font-weight: $link-weight
+            color: $link-color
+            font-size: $link-size
+            letter-spacing: 1px
+
+            a
+                color: $link-color
+
+.arrow
+    position: absolute
+    width: 100%
+    max-width: 1px
+    height: 100%
+    max-height: 407px
+    background-color: $line-color
+    right: 75px
+    top: 195px
+
+    &::after        
+        position: absolute
+        content: ""
+        border-left: 5px solid transparent
+        border-right: 5px solid transparent
+        border-top: 10px solid $arrow-color
+        left: -4px
+        bottom: -10px
+
+.exp-n-edu
+    position: relative
+    display: flex
+    flex-direction: column
+    border-radius: 0 50px 0 0
+    color: $text-color-light
+
+    &__title
+        font-family: 'Bigilla'
+        font-size: $exp-n-edu-title-size
+        font-weight: $exp-n-edu-title-weight
+        font-style: normal
+        line-height: 94%
+        padding-top: 37px
+        padding-left: 37px
+        padding-right: 37px
+        padding-bottom: 40px
+        border-bottom: 1px solid $line-color
+
+        span
+            margin-right: 15px
+
+    &__description
+        display: flex
+        flex-direction: column
+        font-size: 30px
+        font-weight: 500
+        margin-top: 31px
+        margin-left: 34px
+        margin-right: 43px
+        padding-bottom: 61px
+        overflow: hidden
+
+    &__subtitle
+        font-weight: 600
+        font-size: 30px
+        font-style: normal
+        margin-bottom: 12px
+
+    &__primary-text
+        text-align: justify
+        font-size: 22px
+        font-weight: normal
+
+        span
+            margin-right: 105px
+
+            &:nth-child(3)
+                margin-right: 156px
+        
+        &_year
+            font-size: 22px
+            padding-top: 10px
+
+        &_italic
+            font-style: italic
+            font-size: 30px
+            margin-bottom: 18px
+            
+            span
+                margin-right: 130px
+
+                &:nth-child(2)                    
+                    margin-right: 105px
+
+        &_normal
+            font-style: normal
+            font-size: 30px
+            font-weight: 500
+            margin-bottom: 20px
+
+    &__text
+        text-align: justify
+        font-size: 22px
+        margin-bottom: 36px
+
+.stages
+    display: flex
+    flex-direction: column
+    margin-left: 475px
+    color: $text-color-light
+    font-size: 94px
+    font-weight: 500
+    max-width: 1095px
+    width: 100%
+    max-height: 286px
+    height: 100%
+
+    span
+        color: $text-color-light-gray
+
+    &__text-1
+        margin-left: 144px
+        margin-bottom: 30px
+
+.abstract-elem
+    position: absolute
+    filter: blur(1px)
+    top: 2585px
+    right: 0
+    max-width: 1000px
+    width: 100%
+    max-height: 904px
+    height: 100%
+
+.process
+
+    &__content
+        position: relative
+        display: flex
+        flex-direction: column
+
+    &__title
+        color: $h2-color-light
+        font-weight: $h2-weight
+        font-style: normal
+        margin-left: 512px
+
