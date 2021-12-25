@@ -7,8 +7,29 @@
 //Section header
 .header
     position: relative
+    // transform-style: preserve-3d
+
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0   
+        background-image: url(../img/1-header/clouds.png)
+        background-attachment: fixed
+        background-position: center top
+        background-repeat: no-repeat
+        background-size: cover
+        filter: blur(5px)
+        min-height: 110vh
+        // max-height: 1080px
+        min-width: 100vw
+        max-width: 1920px
+        z-index: -1
 
     &__content
+        // transform-style: preserve-3d
         display: flex
         justify-content: flex-start
         flex-wrap: wrap
@@ -47,6 +68,7 @@
     // padding: 10.390625vw 1.640625vw 6.90104167vw 1.640625vw
     border: 7px solid $circle-color
     border-radius: 50%
+    box-shadow: 0px 0px 0px 2px $circle-color,inset 0px 0px 0px 2px $circle-color, 0px 0px 20px 4px $circle-color,inset 0px 0px 20px 4px $circle-color
     display: flex
     flex-direction: column
     justify-content: center
@@ -80,14 +102,19 @@
         font-style: normal
         letter-spacing: 7px
 
-.clouds-bg
+// .clouds-bg
 
-    img
-        left: auto
-        right: auto
-        filter: blur(5px)
-        position: absolute     
-        width: 100%
+//     img
+//         top: 0
+//         left: 0
+//         right: 0
+//         bottom: 0
+//         filter: blur(5px)
+//         position: absolute     
+//         min-width: 100%
+//         min-height: 100%
+//         z-index: -1
+//         background-attachment: fixed
 
 .logo
     position: relative
@@ -123,12 +150,12 @@
 
 //Section about-author
 .about-author
+    margin-bottom: 204px
 
     &__content
         position: relative
         display: flex
         flex-direction: column
-        margin-bottom: 204px
         z-index: 10
 
     &__sign
@@ -147,6 +174,7 @@
     height: 100%
     width: 100%
     background-color: $line-color
+    box-shadow: 0px 0px 0px 2px $line-color,inset 0px 0px 0px 2px $line-color, 0px 0px 20px 4px $line-color,inset 0px 0px 20px 4px $line-color
 
     &__1st
         left: 883px
@@ -173,6 +201,7 @@
         top: 1472px
 
     &__5th
+        width: 10vw
         max-width: 192px
         max-height: 1px
         left: 396px
@@ -190,10 +219,18 @@
         left: 0
         top: 1741px
 
+    // &__8th
+    //     max-width: 1px
+    //     // max-height: 305px
+    //     max-height: 100%
+    //     top: 1741px
+    //     left: 0
     &__8th
         max-width: 1px
-        max-height: 305px
-        top: 1741px
+        // max-height: 305px
+        // max-height: 100%
+        height: 2297px
+        top: -262px
         left: 0
 
     &__9th
@@ -208,11 +245,13 @@
         top: 40px
         left: 396px
 
-    &__11th
-        max-width: 1px
-        max-height: 2096px
-        top: 0
-        left: 0
+    // &__11th
+    //     max-width: 1px
+    //     // max-height: 2096px
+    //     // max-height: 2343px
+    //     // max-height: 100%
+    //     top: 0
+    //     left: 0
 
     &__12th
         max-width: 486px
@@ -225,12 +264,25 @@
         max-height: 1px
         top: 1760px
         left: 0
+
+    &__14th
+        max-width: 1px
+        height: 4508px
+        // top: -247px
+        top: 0
+        left: 0
+    
+    &__15th
+        max-width: 317px
+        max-height: 1px
+        top: 57px
+        left: 0
 //line block end
 
 .info
     display: flex
     justify-content: flex-start
-    flex-wrap: wrap
+    // flex-wrap: wrap
     margin-bottom: 304px
 
 .card
@@ -525,7 +577,8 @@
         color: $text-color-light-gray
 
     &__text-1
-        margin-left: 144px
+        // margin-left: 144px
+        margin-left: 7.5vw
         margin-bottom: 30px
 
 // Section process
@@ -558,6 +611,17 @@
         height: 78.125vw
         overflow-x: hidden
 
+.spot-2
+    z-index: 1
+    position: absolute
+    filter: blur(35px)
+    top: 850px
+    right: -65%
+
+    img
+        width: 78.125vw
+        height: 78.125vw
+
 .process
     position: relative
     margin-bottom: 247px
@@ -567,13 +631,13 @@
         position: relative
         display: flex
         flex-direction: column
-        overflow-x: hidden
+        // overflow-x: hidden
         color: $text-color-light
-        overflow: hidden
+        // overflow: hidden
 
-    &__textbox
-        margin-left: 512px
-        // margin-left: 26.67vw
+    &__textblock
+        // margin-left: 512px
+        margin-left: 26.67vw
         font-size: $text-primary-size
         font-weight: $text-primary-weight
         line-height: 1.5
@@ -587,11 +651,12 @@
                 margin-bottom: 0
 
             &:nth-child(even)
-                color: $text-color-light-gray
+                color: $text-color-light-gray                
 
             span
                 position: absolute
                 background-color: $line-color
+                box-shadow: 0px 0px 0px 2px $line-color,inset 0px 0px 0px 2px $line-color, 0px 0px 20px 4px $line-color,inset 0px 0px 20px 4px $line-color
                 max-width: 102px
                 width: 100%
                 max-height: 1px
@@ -812,3 +877,375 @@
         font-size: $text-medium-size-cd
         font-weight: $text-medium-weight-cd
         line-height: 124%
+
+//Section works
+.works
+    position: relative
+    // padding-bottom: 700px
+    margin-bottom: 200px
+
+    &__content
+        position: relative
+        display: flex
+        flex-direction: column
+        color: $text-color-light
+
+    &__title
+        text-align: center
+        margin-bottom: 108px
+
+        span
+            color: $h2-color-light-gray
+
+    &__big-line
+        position: relative
+        width: 100%
+        height: 100%
+
+        &::before
+            position: absolute
+            content: ""
+            background-color: $line-color
+            box-shadow: 0px 0px 0px 2px $line-color,inset 0px 0px 0px 2px $line-color, 0px 0px 20px 4px $line-color,inset 0px 0px 20px 4px $line-color
+            width: 1px
+            // height: 48%
+            height: 1980px
+            top: -150px
+            left: 58px
+
+    &__description-1
+        display: flex
+        justify-content: flex-start
+        align-items: flex-start
+        // margin-left: 112px
+        margin-left: 5.833vw
+        font-weight: 500
+        font-style: normal        
+
+    &__number
+        width: 6.5625vw
+        max-width: 126px
+        height: 6.5625vw
+        max-height: 126px
+        font-size: 82px
+        position: relative
+
+        &_1
+
+            &::before
+                content: ""
+                position: absolute
+                width: 30px
+                height: 1px
+                background-color: $line-color
+                box-shadow: 0px 0px 0px 2px $line-color,inset 0px 0px 0px 2px $line-color, 0px 0px 20px 4px $line-color,inset 0px 0px 20px 4px $line-color
+                left: -50px
+                top: 45%
+
+        &_2
+
+            &::before
+                content: ""
+                position: absolute
+                width: 30px
+                height: 1px
+                background-color: $line-color
+                box-shadow: 0px 0px 0px 2px $line-color,inset 0px 0px 0px 2px $line-color, 0px 0px 20px 4px $line-color,inset 0px 0px 20px 4px $line-color
+                left: -54px
+                top: 45%
+
+    &__img-1
+        position: relative
+        top: -20px
+        width: 100%
+        max-width: 314px
+        height: 100%
+        max-height: 314px
+        margin-right: 68px
+
+        &::before
+            content: ""
+            position: absolute
+            background-color: $line-color
+            width: 100%
+            max-width: 1px
+            height: 100%
+            max-height: 251px
+            top: 31px
+            right: -9px
+
+        img
+            width: 100%
+            height: 100%
+
+    &__1st-textblock
+        width: 100%
+        max-width: 957px
+        height: 100%
+        max-height: 274px
+        display: flex
+        flex-direction: column
+        line-height: 130%
+        font-size: $text-size
+        font-weight: $text-weight
+        font-style: normal
+
+        span
+            margin-bottom: 42px
+
+            &:last-child
+                margin-bottom: 0
+                font-size: 30.5px
+                font-weight: 300
+
+                &:nth-child(1)
+                    font-weight: 600
+                    color: $text-color-light-gray
+
+    &__picblock-1
+        position: relative
+        display: flex
+        width: 100%
+        padding-bottom: 1201px
+        margin-bottom: 257px
+
+        img
+            border: 1px solid $line-color
+            border-radius: 10px
+            width: 100%
+            height: 100%
+
+    &__img-2                   
+        position: absolute
+        // top: 40px
+        top: 2.083vw
+        // left: 147px
+        left: 7.656vw
+        // width: 100%
+        width: 59.791vw
+        max-width: 1148px
+        max-height: 890px
+        z-index: 2
+
+    &__img-3                   
+        position: absolute
+        // top: 13px
+        top: 0.677vw
+        // left: 969px
+        left: 50.468vw
+        // width: 100%
+        width: 19.531vw
+        max-width: 375px
+        max-height: 500px
+        z-index: 3
+
+    &__img-4      
+        position: absolute
+        // top: 48px
+        top: 2.5vw
+        // left: 1316px
+        left: 68.542vw
+        // width: 100%
+        width: 15.677vw
+        max-width: 301px
+        max-height: 1153px
+        z-index: 2
+
+    &__img-5          
+        position: absolute
+        // top: 976px
+        top: 50.833vw
+        // left: 147px
+        left: 7.656vw
+        // width: 100%
+        width: 71.093vw
+        max-width: 1365px
+        max-height: 170px
+        z-index: 3
+
+    &__description-2
+        display: flex
+        align-items: flex-start
+        // flex-wrap: wrap
+        margin-left: 112px
+        font-weight: 500
+        font-style: normal  
+        z-index: 10
+        margin-bottom: 62px
+
+    &__2nd-textblock
+        display: flex
+        flex-direction: column
+        position: relative
+        // margin-right: 86px
+        margin-right: 4.479vw
+    
+    &__header-wrapper
+        display: flex
+        margin-bottom: 88.5px
+
+    &__2nd-headtext
+        font-family: 'ClashDisplay'
+        font-weight: 600
+        font-size: 105px
+        // width: 100%
+        width: 19.792vw
+        max-width: 380px
+        height: 100%
+        max-height: 151px
+        display: flex
+        flex-direction: column
+        align-items: center
+        // margin-left: 42px
+        margin-left: 2.1875vw
+        margin-top: -15px
+
+        span
+
+            &:nth-child(1)          
+                font-size: 50px
+    
+    &__text-wrapper
+        position: relative
+        // width: 100%
+        width: 26.146vw
+        max-width: 502px
+        height: 100%
+        max-height: 527px
+        margin-left: 114px
+        font-size: $text-size
+        font-style: normal 
+        display: flex
+        flex-direction: column
+
+        span
+            margin-bottom: 50px
+
+            &:first-child
+                
+                span
+                    color: $dark-gray    
+
+            &:last-child
+                margin-bottom: 0
+
+                span
+                    color: $dark-gray
+
+        &::before
+            position: absolute
+            content: ""
+            width: 1px
+            height: 414px
+            background-color: $line-color
+            top: 0
+            left: -54px
+
+    &__picblock-2
+        display: flex
+        position: relative
+        max-width: 769px
+        max-height: 841px
+
+        img
+            border: 1px solid $line-color
+            border-radius: 10px
+            width: 100%
+            height: 100%
+
+    &__img-6
+        width: 9.27vw
+        max-width: 178px
+        height: 20.104vw
+        max-height: 386px
+        // margin-right: 19px
+        margin-right: 0.989vw
+
+    &__img-7
+        width: 9.27vw
+        max-width: 178px
+        height: 43.802vw
+        max-height: 841px
+        // margin-right: 19px
+        margin-right: 0.989vw
+
+    &__img-group-1
+        display: flex
+        // margin-bottom: 19px
+        margin-bottom: 0.989vw
+        width: 19.53vw
+        max-width: 375px
+        height: 20.104vw
+        max-height: 386px
+
+        img
+            // margin-right: 19px
+            margin-right: 0.989vw
+            max-width: 178px
+
+            &:last-child
+                margin-right: 0
+                max-width: 178px
+
+    &__img-group-2
+        display: flex
+        flex-direction: column
+        width: 19.58vw
+        max-width: 376px
+        height: 23.07vw
+        max-height: 443px
+
+        img
+            margin-bottom: 0.989vw
+            // margin-bottom: 19px
+            max-height: 212px  
+
+            &:last-child
+                margin-bottom: 0
+    
+    &__picblock-3
+        position: relative
+        display: flex
+        align-items: flex-start
+        justify-content: flex-start
+        // flex-wrap: wrap
+        // margin-left: 237px
+        margin-left: 12.344vw
+
+        img
+            border: 1px solid $line-color
+            border-radius: 20px
+            width: 100%
+            height: 100%
+
+        div
+            margin-right: 1.71875vw
+
+            &:last-child                     
+                margin-right: 0px
+
+    &__img-12
+        width: 15.989vw
+        max-width: 307px
+        height: 34.635vw
+        max-height: 665px
+
+    &__img-13
+        width: 15.989vw
+        max-width: 307px
+        height: 75.521vw
+        max-height: 1450px
+
+    &__img-14
+        width: 15.989vw
+        max-width: 307px
+        height: 34.635vw
+        max-height: 665px
+
+    &__img-15
+        width: 15.989vw
+        max-width: 307px
+        height: 34.635vw
+        max-height: 665px
+
+//Section Inspirations
