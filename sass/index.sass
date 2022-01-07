@@ -7,7 +7,6 @@
 //Section header
 .header
     position: relative
-    // transform-style: preserve-3d
 
     &::before
         content: ""
@@ -29,19 +28,19 @@
         z-index: -1
 
     &__content
-        // transform-style: preserve-3d
         display: flex
         justify-content: flex-start
         flex-wrap: wrap
         align-items: center
-        width: 100%
-        height: 100%
+        // width: 100%
+        // height: 100%
 
     &__title
         width: 100%
         max-width: 760px
         height: 100%
-        max-height: 350px
+        // max-height: 350px
+        min-height: 400px
         display: flex
         flex-direction: column
         color: $h1-color
@@ -102,20 +101,6 @@
         font-style: normal
         letter-spacing: 7px
 
-// .clouds-bg
-
-//     img
-//         top: 0
-//         left: 0
-//         right: 0
-//         bottom: 0
-//         filter: blur(5px)
-//         position: absolute     
-//         min-width: 100%
-//         min-height: 100%
-//         z-index: -1
-//         background-attachment: fixed
-
 .logo
     position: relative
     display: flex
@@ -174,7 +159,6 @@
     height: 100%
     width: 100%
     background-color: $line-color
-    box-shadow: 0px 0px 0px 2px $line-color,inset 0px 0px 0px 2px $line-color, 0px 0px 20px 4px $line-color,inset 0px 0px 20px 4px $line-color
 
     &__1st
         left: 883px
@@ -267,7 +251,7 @@
 
     &__14th
         max-width: 1px
-        height: 4508px
+        height: 4548px
         // top: -247px
         top: 0
         left: 0
@@ -282,7 +266,6 @@
 .info
     display: flex
     justify-content: flex-start
-    // flex-wrap: wrap
     margin-bottom: 304px
 
 .card
@@ -314,28 +297,39 @@
             width: 100%
             height: 100%
 
-        span
+        &::before
             position: absolute
+            content: ""
             width: 100%
-            max-height: 1px
             height: 100%
+            max-height: 1px
             background-color: $line-color
-            left: 0
             bottom: 0
+            left: 0
 
     &__description
-        margin-top: 10px
-        margin-left: 17px
-        margin-bottom: 28px
+        padding-top: 10px
+        padding-left: 17px
+        padding-right: 20px
+        padding-bottom: 28px
         position: relative
-        max-height: 212px//182.5px
-        height: 100%
-        max-width: 474px
+        display: flex
         width: 100%
-        overflow: hidden
+        // overflow: hidden
         word-break: break-all
 
+        &::before
+            position: absolute
+            content: ""
+            width: 100%
+            height: 100%
+            max-height: 1px
+            background-color: $line-color
+            bottom: 0
+            left: 0
+
     &__title
+        position: relative
         font-size: $pf-title-size
         font-family: 'Bigilla'
         font-weight: $pf-title-weight
@@ -344,8 +338,8 @@
     
     &__subtext
         position: absolute
-        right: 33px
-        bottom: 5px
+        right: 0
+        bottom: 0
         display: flex
         flex-direction: column
         font-weight: $text-light-weight-nhgdp
@@ -358,24 +352,24 @@
         position: relative
         display: flex        
         align-items: center
-        border-top: 1px solid $line-color
+        padding-top: 10px
+        padding-bottom: 10px
+        padding-left: 20px
+        padding-right: 25px
 
     &__sign
-        margin-top: 15px
-        margin-left: 20px
-        margin-bottom: 15px
         font-family: 'Arial'
         font-size: $subtext-size
         font-style: normal
         font-weight: 700
         letter-spacing: 4px
-        margin-right: 132px
+        margin-right: auto
 
 .circle
-    max-width: 16.5px
     width: 100%
-    min-height: 16.5px
+    max-width: 16.5px
     height: 100%
+    min-height: 16.5px
     border-radius: 50%
     margin-right: 18.5px
 
@@ -398,10 +392,11 @@
         position: relative
         display: flex
         flex-direction: column
-        overflow: hidden
         word-break: break-all
         padding-top: 25px
         padding-left: 25px
+        padding-right: 25px
+        padding-bottom: 60px
         border-bottom: 1px solid $line-color
         
     &__title
@@ -409,16 +404,14 @@
         font-size: $contacts-title-size
         font-weight: $contacts-title-weight
         font-style: normal
-        line-height: 94%
-        width: 100%
-        min-width: 449px
+        line-height: 95%
+        // width: 100%
+        // min-width: 449px
         margin-bottom: 40px
 
     &__img
         max-width: 235px
         max-height: 270px
-        margin-bottom: 60px
-
 
         img
             width: 100%
@@ -428,19 +421,19 @@
         display: flex
         flex-direction: column
         justify-content: center
-        margin-top: 24px
-        margin-left: 25px
-        margin-right: 25px
-        margin-bottom: 24px
+        padding-top: 14px
+        padding-left: 25px
+        padding-right: 25px
+        padding-bottom: 14px
         font-weight: $link-weight-bold
         font-style: normal
         font-size: $text-primary-size
 
-    &__link
-        max-width: 460px
+    &__link        
         width: 100%
-        max-height: 65.3px
+        max-width: 460px
         height: 100%
+        max-height: 65.3px
         display: flex
         border: 1px solid $line-color
         border-radius: 0 50px 50px 0
@@ -496,7 +489,7 @@
         font-size: $exp-n-edu-title-size
         font-weight: $exp-n-edu-title-weight
         font-style: normal
-        line-height: 94%
+        line-height: 95%
         padding-top: 37px
         padding-left: 37px
         padding-right: 37px
@@ -511,11 +504,10 @@
         flex-direction: column
         font-size: 30px
         font-weight: 500
-        margin-top: 31px
-        margin-left: 34px
-        margin-right: 43px
-        padding-bottom: 61px
-        overflow: hidden
+        padding-top: 31px
+        padding-left: 34px
+        padding-right: 43px
+        padding-bottom: 30px
 
     &__subtitle
         font-weight: 600
@@ -568,10 +560,6 @@
     color: $text-color-light
     font-size: 94px
     font-weight: 500
-    max-width: 1095px
-    width: 100%
-    max-height: 286px
-    height: 100%
 
     span
         color: $text-color-light-gray
@@ -590,12 +578,11 @@
     right: -160px
     max-width: 1000px
     max-height: 1000px
-    overflow-x: hidden
+    // overflow-x: hidden
 
     img
         width: 100%
         height: 100%
-        overflow-x: hidden
 
 .spot-1
     z-index: 1
@@ -631,9 +618,7 @@
         position: relative
         display: flex
         flex-direction: column
-        // overflow-x: hidden
         color: $text-color-light
-        // overflow: hidden
 
     &__textblock
         // margin-left: 512px
@@ -656,7 +641,6 @@
             span
                 position: absolute
                 background-color: $line-color
-                box-shadow: 0px 0px 0px 2px $line-color,inset 0px 0px 0px 2px $line-color, 0px 0px 20px 4px $line-color,inset 0px 0px 20px 4px $line-color
                 max-width: 102px
                 width: 100%
                 max-height: 1px
@@ -906,7 +890,6 @@
             position: absolute
             content: ""
             background-color: $line-color
-            box-shadow: 0px 0px 0px 2px $line-color,inset 0px 0px 0px 2px $line-color, 0px 0px 20px 4px $line-color,inset 0px 0px 20px 4px $line-color
             width: 1px
             // height: 48%
             height: 1980px
@@ -917,16 +900,16 @@
         display: flex
         justify-content: flex-start
         align-items: flex-start
-        // margin-left: 112px
-        margin-left: 5.833vw
+        margin-left: 112px
+        // margin-left: 5.833vw
         font-weight: 500
         font-style: normal        
 
     &__number
-        width: 6.5625vw
-        max-width: 126px
-        height: 6.5625vw
-        max-height: 126px
+        // width: 6.5625vw
+        // max-width: 126px
+        // height: 6.5625vw
+        // max-height: 126px
         font-size: 82px
         position: relative
 
@@ -938,11 +921,11 @@
                 width: 30px
                 height: 1px
                 background-color: $line-color
-                box-shadow: 0px 0px 0px 2px $line-color,inset 0px 0px 0px 2px $line-color, 0px 0px 20px 4px $line-color,inset 0px 0px 20px 4px $line-color
-                left: -50px
+                left: -52px
                 top: 45%
 
         &_2
+            margin-right: 2.1875vw//42px    
 
             &::before
                 content: ""
@@ -950,9 +933,8 @@
                 width: 30px
                 height: 1px
                 background-color: $line-color
-                box-shadow: 0px 0px 0px 2px $line-color,inset 0px 0px 0px 2px $line-color, 0px 0px 20px 4px $line-color,inset 0px 0px 20px 4px $line-color
                 left: -54px
-                top: 45%
+                top: 42%
 
     &__img-1
         position: relative
@@ -981,8 +963,8 @@
     &__1st-textblock
         width: 100%
         max-width: 957px
-        height: 100%
-        max-height: 274px
+        // height: 100%
+        // max-height: 274px
         display: flex
         flex-direction: column
         line-height: 130%
@@ -1005,7 +987,10 @@
     &__picblock-1
         position: relative
         display: flex
+        flex-direction: column
         width: 100%
+        height: 100%
+        max-height: 1155px
         padding-bottom: 1201px
         margin-bottom: 257px
 
@@ -1066,7 +1051,6 @@
     &__description-2
         display: flex
         align-items: flex-start
-        // flex-wrap: wrap
         margin-left: 112px
         font-weight: 500
         font-style: normal  
@@ -1088,16 +1072,10 @@
         font-family: 'ClashDisplay'
         font-weight: 600
         font-size: 105px
-        // width: 100%
-        width: 19.792vw
-        max-width: 380px
-        height: 100%
         max-height: 151px
         display: flex
         flex-direction: column
         align-items: center
-        // margin-left: 42px
-        margin-left: 2.1875vw
         margin-top: -15px
 
         span
@@ -1107,8 +1085,8 @@
     
     &__text-wrapper
         position: relative
-        // width: 100%
-        width: 26.146vw
+        width: 100%
+        // width: 26.146vw
         max-width: 502px
         height: 100%
         max-height: 527px
@@ -1154,98 +1132,236 @@
             height: 100%
 
     &__img-6
-        width: 9.27vw
+        // width: 9.27vw        
         max-width: 178px
-        height: 20.104vw
+        // height: 20.104vw
         max-height: 386px
-        // margin-right: 19px
-        margin-right: 0.989vw
+        margin-right: 19px
+        // margin-right: 0.989vw
 
     &__img-7
-        width: 9.27vw
+        // width: 9.27vw
+        // width: 100%
         max-width: 178px
-        height: 43.802vw
+        // height: 43.802vw
+        // height: 100%
         max-height: 841px
-        // margin-right: 19px
-        margin-right: 0.989vw
+        margin-right: 19px
+        // margin-right: 0.989vw
 
     &__img-group-1
         display: flex
-        // margin-bottom: 19px
-        margin-bottom: 0.989vw
-        width: 19.53vw
-        max-width: 375px
-        height: 20.104vw
-        max-height: 386px
+        margin-bottom: 19px
+        // margin-bottom: 0.989vw
+        // width: 19.53vw
+        // max-width: 375px
+        // height: 20.104vw
+        // max-height: 386px
 
-        img
-            // margin-right: 19px
-            margin-right: 0.989vw
-            max-width: 178px
-
-            &:last-child
-                margin-right: 0
-                max-width: 178px
+    &__img-8
+        width: 100%
+        max-width: 178px
+        // margin-right: auto
+        margin-right: 19px
+        // margin-right: 0.989vw
+    
+    &__img-9
+        width: 100%
+        max-width: 178px
 
     &__img-group-2
         display: flex
         flex-direction: column
-        width: 19.58vw
+        // width: 19.58vw
+        // max-width: 376px
+        // height: 23.07vw
+        // max-height: 443px
+
+    &__img-10
+        width: 100%
         max-width: 376px
-        height: 23.07vw
-        max-height: 443px
+        // margin-bottom: 0.989vw
+        margin-bottom: 19px
 
-        img
-            margin-bottom: 0.989vw
-            // margin-bottom: 19px
-            max-height: 212px  
-
-            &:last-child
-                margin-bottom: 0
+    &__img-11
+        width: 100%
+        max-width: 376px
     
     &__picblock-3
         position: relative
         display: flex
         align-items: flex-start
         justify-content: flex-start
-        // flex-wrap: wrap
-        // margin-left: 237px
-        margin-left: 12.344vw
+        width: 100%
+        margin-left: 237px
+        // margin-left: 12.344vw
 
         img
             border: 1px solid $line-color
             border-radius: 20px
-            width: 100%
-            height: 100%
+            // width: 100%
+            // height: 100%
 
         div
-            margin-right: 1.71875vw
+            // margin-right: 1.71875vw
+            margin-right: 32px
 
             &:last-child                     
                 margin-right: 0px
 
+            // img
+            //     width: 100%
+            //     height: 100%
+
     &__img-12
-        width: 15.989vw
+        // width: 100%
+        // height: 100%
+        // width: 15.989vw
         max-width: 307px
-        height: 34.635vw
+        // height: 34.635vw
         max-height: 665px
+
+        img
+            width: 100%
+            height: 100%
 
     &__img-13
-        width: 15.989vw
+        // width: 100%
+        // height: 100%
+        // width: 15.989vw
         max-width: 307px
-        height: 75.521vw
+        // height: 75.521vw
         max-height: 1450px
 
+        img
+            width: 100%
+            height: 100%
+
     &__img-14
-        width: 15.989vw
+        // width: 100%
+        // height: 100%
+        // width: 15.989vw
         max-width: 307px
-        height: 34.635vw
+        // height: 34.635vw
         max-height: 665px
+
+        img
+            width: 100%
+            height: 100%
 
     &__img-15
-        width: 15.989vw
+        // width: 100%
+        // height: 100%
+        // width: 15.989vw
         max-width: 307px
-        height: 34.635vw
+        // height: 34.635vw
         max-height: 665px
 
+        img
+            width: 100%
+            height: 100%
+
 //Section Inspirations
+.inspirations
+    margin-bottom: 80px
+
+    &__content
+        position: relative
+        display: flex
+        flex-direction: column        
+
+        h2
+            padding-left: 248px
+            margin-bottom: 54px
+            position: relative
+
+            &::before
+                position: absolute
+                content: ""
+                width: 100%
+                max-width: 219px
+                height: 100%
+                max-height: 1px
+                background-color: $line-color
+                top: 50%
+                left: 0
+
+    &__picblock
+        display: flex
+        justify-content: flex-start
+        margin-bottom: 120px
+
+        img
+            height: 100%
+            width: 100%
+
+    &__pic-1
+        max-width: 402px
+        max-height: 274px
+        // margin-right: 42px
+        margin-right: auto
+
+    &__pic-2
+        max-width: 384px
+        max-height: 274px
+        // margin-right: 42px
+        margin-right: auto
+
+    &__pic-3
+        max-width: 379px
+        max-height: 274px
+        // margin-right: 42px
+        margin-right: auto
+
+    &__pic-4
+        max-width: 321px
+        max-height: 274px
+
+    &__textblock
+        display: flex
+        flex-direction: column
+        font-size: $text-size
+        font-weight: $text-weight
+        line-height: 130%    
+
+        p
+            text-align: justify
+            margin-bottom: 48px
+
+        a
+            color: $text-color-dark-gray
+            position: relative
+
+            &::before
+                position: absolute
+                content: ""
+                width: 100%
+                height: 1px
+                background-color: $line-color-dark-gray
+                left: 0
+                bottom: 0
+
+//Section footer
+.footer
+    margin-bottom: 76px
+
+    &__content
+        position: relative
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        span
+            font-size: $label-size
+            font-weight: $label-weight
+            letter-spacing: 4px
+            line-height: 200%
+
+    &__line
+        position: relative
+        width: 100%
+        max-width: 1308px
+        height: 1px
+        background-color: $line-color
+
+
