@@ -1,5 +1,4 @@
-@media screen and (max-width: 1550px)
-    
+@media screen and (max-width: 1550px)    
     .container
         max-width: 900px
 
@@ -28,7 +27,7 @@
 
     .card
         margin-right: 0
-        margin-bottom: 20px
+        margin-bottom: 40px
 
         &:last-child
             margin-bottom: 0
@@ -62,6 +61,7 @@
 
     .line
         display: none
+        visibility: hidden
 
     .stages
         margin-left: 0
@@ -78,15 +78,13 @@
             text-align: center
 
     .abstract-elem
-        // max-width: 600px
-        // max-height: 600px
         display: none
+        visibility: hidden
 
     .process
         margin-bottom: 95px
 
         &__content
-            justify-content: center
             margin-left: auto
             margin-right: auto
         
@@ -94,7 +92,6 @@
             position: relative
             display: flex
             flex-direction: column
-            justify-content: center
             margin-left: auto
             margin-bottom: 95px
 
@@ -149,12 +146,13 @@
             &_1
                 &::before
                     display: none
+                    visibility: hidden
 
-            &_2
-                // margin-right: 42px               
+            &_2              
 
                 &::before
                     display: none
+                    visibility: hidden
 
         &__title
             margin-bottom: 95px
@@ -163,11 +161,11 @@
 
             &::before        
                 display: none
+                visibility: hidden
 
         &__description-1
             margin-left: 0
             justify-content: center
-            // margin-bottom: 30vw
         
         &__picblock-1
             // padding-bottom: 800px
@@ -191,8 +189,6 @@
             justify-content: center
 
         &__2nd-textblock
-            // margin-left: auto
-            // margin-right: auto
             margin-bottom: 95px
 
         &__picblock-3
@@ -209,6 +205,7 @@
 
                 &::before
                     display: none
+                    visibility: hidden
         
         &__picblock
             flex-wrap: wrap
@@ -217,16 +214,20 @@
 
         &__pic-1
             margin-right: 0
+            margin-bottom: 20px
 
         &__pic-2
             margin-right: 0
             margin-left: auto
+            margin-bottom: 20px
 
         &__pic-3
             margin-right: 0
+            margin-bottom: 20px
 
         &__pic-4
             margin-left: auto
+            margin-bottom: 20px
 
     .footer
 
@@ -234,7 +235,6 @@
             max-width: 658px
 
 @media screen and (max-width: 1190px)
-
     .works
 
         &__img-2
@@ -250,7 +250,6 @@
             left: 7.656vw
 
 @media screen and (max-width: 980px)
-
     .works
 
         &__img-2
@@ -264,3 +263,485 @@
 
         &__img-5
             left: 12.656vw
+
+@media screen and (max-width: 768px)
+    .container
+        max-width: 600px
+
+    .header
+
+        &__title
+            align-items: center
+
+            &_NHDP-font
+
+
+            &_PF-font
+                margin-top: -70px
+                margin-left: 145px
+
+            h1
+                font-size: 9em
+
+    .circle-title
+        max-width: 600px
+        max-height: 600px
+
+        &__text
+            font-size: 64px
+
+    .process
+
+        &__title
+            margin-left: auto
+            margin-right: auto
+
+            &::before
+                display: none
+
+        &__textblock
+            align-items: center
+
+            &::before
+                display: none
+
+            ul
+                text-align: center
+
+            li
+
+                span        
+                    display: none
+
+    .des-n-mus
+        
+        &__wrapper
+            max-height: 620px
+
+        &__picbox
+            
+            img
+                margin-right: auto
+                margin-left: auto
+                margin-bottom: auto
+
+                &:last-child
+                    margin-left: 0
+                    margin-right: 0
+
+    .development
+        
+        &__wrapper
+            padding-top: 150px
+            padding-bottom: 150px
+            max-height: 620px
+
+    .works
+
+        &__description-1
+            flex-wrap: wrap
+
+        &__1st-textblock
+            text-align: justify
+
+        &__picblock-1
+            padding-bottom: 40vw
+
+        &__img-2
+            left: 0.656vw
+
+        &__img-3
+            left: 43.468vw
+
+        &__img-4
+            left: 61.542vw
+
+        &__img-5
+            left: 0.656vw
+
+    .footer
+
+        &__line
+            max-width: 348px
+
+@media screen and (max-width: 620px)
+    .container
+        max-width: 500px
+
+    .header
+
+        &__title
+            
+            h1
+                font-size: 7em
+
+            &_PF-font
+                margin-top: -60px
+                margin-left: 125px
+
+    .circle-title
+        max-width: 500px
+        max-height: 500px
+
+        &__text
+            font-size: 54px
+
+    .stages
+        font-size: 84px
+
+    .des-n-mus
+        
+        &__adobe
+            flex-direction: column
+            align-items: center
+            text-align: center
+            margin-bottom: 18px
+
+            img
+                margin-right: 0
+
+            span
+                margin-top: 0
+
+    .development
+
+            &__wrapper
+                padding-top: 130px
+
+    .works
+
+        &__number
+            font-size: 72px
+
+        &__picblock-1
+            padding-bottom: 30vw
+
+        &__img-2
+            left: 7.656vw
+
+        &__img-3
+            left: 52.468vw
+
+        &__img-4
+            left: 68.542vw
+
+        &__img-5
+            left: 7.656vw
+
+        &__text-wrapper
+            margin-left: auto
+
+            &::before
+                display: none
+
+        &__2nd-headtext
+            font-style: 95px
+
+        &__img-6
+            max-height: 230px
+
+    .inspirations
+        
+        &__content
+
+            h2
+                font-size: 74px
+
+    .footer
+
+        &__line
+            max-width: 258px
+
+@media screen and (max-width: 478px)
+    body
+
+        h2
+            font-size: 64px
+
+    .container
+        max-width: 372px
+
+    .header
+
+        &::before
+            min-height: 100vh
+
+    .logo
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin-bottom: 20px
+
+        &__link
+            margin-bottom: 20px
+
+    .header
+        
+        &__title
+            margin-bottom: 20px
+
+            h1
+                font-size: 4.5em
+
+            &_NHDP-font
+                font-style: italic
+
+            &_PF-font
+                margin-top: -30px
+                margin-left: 0
+
+    .circle-title
+        max-width: 350px
+        max-height: 350px
+
+        &__text
+            font-size: 40px
+
+        &__subtext
+            font-size: 16px
+
+    .about-author
+        
+        &__sign
+            font-size: 2em
+
+    .card
+        max-width: 368px
+
+    .portfolio
+
+        &__title
+            max-width: 368px
+            font-size: 72px
+            padding-left: 8px
+            padding-right: 6px
+
+        &__subtext
+            font-size: 16px
+            right: 6px
+
+        &__sign-block
+            max-width: 368px
+            padding-left: 8px
+            padding-right: 8px
+
+        &__sign
+            margin-right: auto
+
+    .contacts
+
+        &__title
+            font-size: 105px
+            letter-spacing: 6px
+
+        &__link
+
+            a
+                font-size: 17px
+
+    .arrow
+        max-height: 307px
+
+    .exp-n-edu
+
+        &__description
+            padding-top: 16px
+        
+        &__title
+            font-size: 56px
+            padding-left: 27px
+            padding-right: 17px
+
+        &__primary-text
+
+            span
+                margin-right: 45px
+
+                &:nth-child(3)
+                    margin-right: 80px    
+
+        &__primary-text_italic
+
+            span
+                margin-right: 60px
+
+                &:nth-child(2)
+                    margin-right: 65px
+
+        &__text
+            margin-bottom: 20px
+    
+    .stages
+        font-size: 54px
+
+    .process
+
+        &__textblock
+            font-size: 34px
+
+    .des-n-mus
+
+        &__wrapper
+            max-height: 720px
+            padding-top: 40px
+            padding-bottom: 100px
+            // padding-bottom: 40vw
+
+        &__picbox
+
+            img
+
+                &:nth-child(7)          
+                    margin-left: 0
+                    margin-right: 0
+
+                &:nth-child(8)          
+                    margin-left: 0
+                    margin-right: 0
+
+        &__subtitle
+            text-align: center
+
+    .development
+
+        &__wrapper
+            max-height: 720px
+            padding-top: 110px
+
+        &__basis
+            margin-bottom: 10px
+
+        &__web
+            margin-bottom: auto
+
+            img
+                margin-right: 3vw
+                margin-bottom: 10px
+
+        &__subtitle
+            text-align: center
+
+    .works
+
+        &__title
+            margin-bottom: 40px
+
+        &__img-1
+            margin-right: 0
+
+            &::before
+                display: none
+
+        &__description-1
+            flex-direction: column
+            align-items: center
+            justify-content: center
+
+        &__1st-textblock
+            max-width: 370px
+            text-align: center
+
+            span
+                margin-bottom: 12px
+
+        &__picblock-1
+            padding-bottom: 10px
+
+        &__img-2
+            left: 10.656vw
+
+        &__img-3
+            left: 55.468vw
+
+        &__img-4
+            left: 71.542vw
+
+        &__img-5
+            left: 10.656vw
+
+        &__header-wrapper
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            margin-bottom: 20px
+
+        &__number
+            
+            &_2
+                margin-bottom: 20px
+
+        &__2nd-textblock
+            margin-right: 0
+            margin-bottom: 45px
+
+        &__2nd-headtext
+            font-size: 45px
+            align-items: center
+
+            span
+
+                &:first-child
+                    font-size: 45px
+
+        &__text-wrapper
+            text-align: center
+
+            span 
+                margin-bottom: 40px
+        
+        &__img-6
+            max-height: 160.66px
+            max-width: 75.58px
+
+        &__picblock-3 
+            flex-direction: column
+            align-items: center
+            justify-content: center
+
+            div
+                margin-right: 0
+                margin-bottom: 40px
+
+                &:last-child
+                    margin-bottom: 0
+
+    .inspirations
+
+        &__content
+
+            h2
+                font-size: 54px
+                margin-bottom: 40px
+
+        &__picblock
+            flex-wrap: nowrap
+            align-items: center
+            margin-bottom: 40px
+
+        &__pic-1
+            margin-right: 0
+            margin-bottom: 20px
+
+        &__pic-2
+            margin-right: 0
+            margin-left: 0
+            margin-bottom: 20px
+
+        &__pic-3
+            margin-right: 0
+            margin-bottom: 20px
+
+        &__pic-4
+            margin-left: 0
+            margin-bottom: 20px
+
+        &__textblock
+            font-size: 24px
+
+            p
+                margin-bottom: 40px
+
+    .footer
+
+        &__line
+            max-width: 128px
